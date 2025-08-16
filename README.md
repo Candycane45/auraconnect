@@ -10,9 +10,9 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-green)](https://mongodb.com/)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth-orange)](https://firebase.google.com/)
 
-[🐛 Report Bug](https://github.com/yourusername/auraconnect/issues) 
+[🐛 Report Bug](https://github.com/Candycane45/auraconnect/issues) 
 
-[✨ Request Feature](https://github.com/yourusername/auraconnect/issues)
+[✨ Request Feature](https://github.com/Candycane/auraconnect/issues)
 
 </div>
 
