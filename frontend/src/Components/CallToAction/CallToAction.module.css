@@ -1,0 +1,24 @@
+.cta {
+  text-align: center;
+  padding: 52px 20px;
+  background: linear-gradient(90deg, var(--soft-pink), var(--matcha-green));
+  color: var(--dark-green);
+}
+
+.btnSecondary {
+  margin-top: 16px;
+  background: var(--hot-pink);
+  color: var(--white);
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  font-size: 1em;
+}
+
+.btnSecondary:hover {
+  background: var(--dark-green);
+  transform: scale(1.05);
+}

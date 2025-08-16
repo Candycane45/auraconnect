@@ -1,0 +1,31 @@
+.testimonials {
+  padding: 40px 0;
+  background: var(--white);
+  text-align: center;
+}
+
+.testimonialCards {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: var(--off-white);
+  padding: 22px;
+  border-radius: 13px;
+  box-shadow: 0 4px 10px rgba(56, 102, 65, 0.07);
+  width: 280px;
+  font-style: italic;
+  color: var(--dark-green);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--hot-pink);
+  font-style: normal;
+}

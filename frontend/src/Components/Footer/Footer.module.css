@@ -1,0 +1,54 @@
+.footerContact {
+  text-align: center;
+  background: linear-gradient(90deg, var(--soft-pink), var(--matcha-green));
+  padding: 50px 20px;
+  color: var(--dark-green);
+}
+
+.footerContact h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.contactForm {
+  display: inline-block;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(56, 102, 65, 0.2);
+  border-radius: 8px;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: var(--matcha-green);
+  background: var(--white);
+}
+
+.contactForm button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footerCopyright {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark-green);
+  color: var(--white);
+  font-size: 1em;
+}
+
+.footerCopyright p {
+  margin: 0;
+}

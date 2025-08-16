@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, var(--matcha-green), var(--soft-pink));
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.nav a {
+  color: var(--white);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--hot-pink);
+}
+
+.btnPrimary {
+  background: var(--matcha-green);
+  color: var(--dark-green);
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  font-size: 1em;
+}
+
+.btnPrimary:hover {
+  background: var(--hot-pink);
+  color: var(--white);
+  transform: scale(1.05);
+}

@@ -1,0 +1,48 @@
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+  background: linear-gradient(90deg, var(--matcha-green) 70%, var(--soft-pink));
+}
+
+.searchBox {
+  margin-top: 25px;
+}
+
+.searchBox input {
+  padding: 12px;
+  width: 270px;
+  border: none;
+  border-radius: 22px;
+  outline: none;
+  font-size: 1em;
+  background-color: aliceblue;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  background-color: #f0f8ff; /* aliceblue, subtle background */
+  color: #111; /* dark black text for readability */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.searchBox input::placeholder {
+  color: #888; /* soft gray for placeholder */
+  font-style: italic;
+}
+
+.btnPrimary {
+  margin-left: 10px;
+  background: var(--matcha-green);
+  color: var(--dark-green);
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  font-size: 1em;
+}
+
+.btnPrimary:hover {
+  background: var(--hot-pink);
+  color: var(--white);
+  transform: scale(1.05);
+}
