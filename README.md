@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![AuraConnect Logo](https://via.placeholder.com/200x80/95d5b2/386641?text=AuraConnect)
+<img src="https://github.com/Candycane45/auraconnect/blob/main/frontend/public/logo.png" alt="AuraConnect Logo" width="90" height="90">
 
 **A neighborhood-first event networking platform that transforms digital connections into real-world community experiences**
 
