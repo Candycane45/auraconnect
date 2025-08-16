@@ -6,7 +6,6 @@
 
 **A neighborhood-first event networking platform that transforms digital connections into real-world community experiences**
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Next.js](https://img.shields.io/badge/Next.js-13+-black)](https://nextjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-green)](https://mongodb.com/)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth-orange)](https://firebase.google.com/)
