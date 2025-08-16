@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* keep nav links and auth buttons on sides */
+  align-items: center; /* vertical center */
   padding: 15px 40px;
   background: linear-gradient(90deg, var(--matcha-green), var(--soft-pink));
   color: var(--white);
@@ -11,8 +11,22 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  justify-content: center; /* horizontal alignment inside logo div */
+  gap: 10px; /* space between icon and text */
   font-size: 1.6em;
   font-weight: bold;
+}
+
+.logoImage {
+  object-fit: contain; /* keep logo proportion */
+  border-radius: 50%; /* optional if you want rounded icon */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav a {
@@ -25,6 +39,12 @@
 
 .nav a:hover {
   color: var(--hot-pink);
+}
+
+.authButtons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .btnPrimary {
@@ -44,93 +64,6 @@
   color: var(--white);
   transform: scale(1.05);
 }
-/* 
-.authButtons {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.btnSecondary {
-  background: transparent;
-  color: var(--white);
-  padding: 10px 22px;
-  border: 2px solid var(--white);
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s, background 0.3s, color 0.3s;
-  font-size: 1em;
-}
-
-.btnSecondary:hover {
-  background: var(--white);
-  color: var(--matcha-green);
-  transform: scale(1.05);
-}
-
-.dropdownMenu {
-  position: absolute;
-  top: 70px;
-  right: 40px;
-  background: var(--white);
-  color: var(--dark-green);
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(56, 102, 65, 0.2);
-  min-width: 200px;
-  z-index: 999;
-  padding: 12px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.dropdownHeader {
-  padding: 0 16px;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
-}
-
-.userName {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.userEmail {
-  font-size: 0.9rem;
-  color: gray;
-}
-
-.dropdownItem {
-  padding: 0 16px;
-}
-
-.dropdownItem a {
-  text-decoration: none;
-  color: var(--dark-green);
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.dropdownItem a:hover {
-  color: var(--hot-pink);
-}
-
-.logoutBtn {
-  background: transparent;
-  border: none;
-  color: var(--hot-pink);
-  font-weight: bold;
-  padding: 10px 16px;
-  text-align: left;
-  cursor: pointer;
-  font-size: 1em;
-  transition: color 0.3s;
-}
-
-.logoutBtn:hover {
-  color: var(--dark-green);
-} */
 
 .dropdownMenu {
   position: absolute;

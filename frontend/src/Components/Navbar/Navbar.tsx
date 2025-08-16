@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { useAuth } from "@/context/AuthUserContext";
 import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const { authUser, loading, signOut } = useAuth();
@@ -29,7 +30,16 @@ export default function Navbar() {
 
   return (
     <header className={styles.navbar}>
-      <div className={styles.logo}>AuraConnect</div>
+      <div className={styles.logo}>
+        <Image
+          src="/logo.png" // Put your logo PNG in public/logo.png
+          alt="AuraConnect Logo"
+          width={40} // adjust size as needed
+          height={40}
+          className={styles.logoImage}
+        />
+        <span>AuraConnect</span>
+      </div>
 
       <nav className={styles.nav}>
         <Link href="/">Home</Link>
