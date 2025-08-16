@@ -11,7 +11,9 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-green)](https://mongodb.com/)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth-orange)](https://firebase.google.com/)
 
-[🚀 Live Demo](#) • [📖 Documentation](#) • [🐛 Report Bug](https://github.com/yourusername/auraconnect/issues) • [✨ Request Feature](https://github.com/yourusername/auraconnect/issues)
+[🐛 Report Bug](https://github.com/yourusername/auraconnect/issues) 
+
+[✨ Request Feature](https://github.com/yourusername/auraconnect/issues)
 
 </div>
 
@@ -65,29 +67,17 @@ In today's fast-paced world, neighbors often live side-by-side for years without
 - 📸 Event creation with rich media support
 
 </td>
-</tr>
-</table>
+
+<td width="75%">
 
 ### 🔐 Secure Authentication
 - 🔥 Firebase-powered authentication
 - 🔑 Google OAuth integration
 - 🛡️ Privacy-first approach to user data
 
----
-
-## 🖼️ Screenshots
-
-<div align="center">
-
-| 🏠 Homepage | 📅 Event Discovery |
-|:---:|:---:|
-| ![Homepage](https://via.placeholder.com/400x300/95d5b2/386641?text=Homepage) | ![Event Discovery](https://via.placeholder.com/400x300/f76b8a/ffffff?text=Event+Discovery) |
-
-| 👤 User Profile | 📱 Mobile Experience |
-|:---:|:---:|
-| ![User Profile](https://via.placeholder.com/400x300/ffb6b9/386641?text=User+Profile) | ![Mobile View](https://via.placeholder.com/400x300/95d5b2/ffffff?text=Mobile+View) |
-
-</div>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -194,23 +184,6 @@ Before you begin, ensure you have the following installed:
 
 5. **Open your browser**
    Navigate to `http://localhost:3000`
-
----
-
-## 📁 Project Structure
-
-```
-auraconnect/
-├── 📂 components/          # Reusable UI components
-├── 📂 pages/              # Next.js pages and API routes
-├── 📂 styles/             # CSS stylesheets
-├── 📂 public/             # Static assets
-├── 📂 utils/              # Utility functions
-├── 📂 hooks/              # Custom React hooks
-├── 📂 lib/                # Configuration files
-├── 📂 types/              # TypeScript definitions
-└── 📄 README.md           # You are here! 🎯
-```
 
 ---
 
@@ -378,12 +351,6 @@ Have an idea for improvement? We'd love to hear it! Please include:
 3. 📝 Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. 📤 Push to the branch (`git push origin feature/amazing-feature`)
 5. 🔃 Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
