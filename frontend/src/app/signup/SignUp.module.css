@@ -1,0 +1,113 @@
+/* app/signup/SignUp.module.css */
+/* ✅ Full-page wrapper for background and centering */
+.pageWrapper {
+  min-height: 100vh;
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.signupContainer {
+  background: #fde7e7;
+  padding: 56px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 12px 24px rgba(56, 102, 65, 0.15);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 32px;
+  color: #386641;
+  letter-spacing: 0.08em;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.signupForm label {
+  font-weight: 600;
+  color: #386641;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.signupForm input {
+  padding: 14px 16px;
+  border-radius: 15px;
+  border: 2px solid #95d5b2;
+  background: #ffb6b9;
+  font-size: 1.05rem;
+  color: #386641;
+  transition: border-color 0.3s ease;
+  outline-offset: 2px;
+}
+
+.signupForm input:focus {
+  border-color: #f76b8a;
+  background: #fff;
+}
+
+.btnPrimary {
+  margin-top: 26px;
+  background-color: #95d5b2;
+  color: #386641;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 14px 0;
+  border-radius: 28px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 18px rgba(149, 210, 179, 0.4);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #f76b8a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.loginText {
+  margin-top: 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #386641;
+}
+
+.loginText a {
+  color: #f76b8a;
+  text-decoration: none;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.loginText a:hover {
+  color: #95d5b2;
+}
+
+@media (max-width: 480px) {
+  .signupContainer {
+    padding: 28px 24px 36px;
+  }
+
+  .pageTitle {
+    font-size: 2.2rem;
+  }
+
+  .signupForm input {
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+}
