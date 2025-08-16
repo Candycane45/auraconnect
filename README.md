@@ -364,18 +364,6 @@ Have an idea for improvement? We'd love to hear it! Please include:
 
 ---
 
-## 📞 Contact & Support
-
-<div align="center">
-
-**Have questions? We'd love to hear from you!**
-
-[![Email](https://img.shields.io/badge/Email-team@auraconnect.com-red?style=for-the-badge&logo=gmail)](mailto:team@auraconnect.com)
-[![Website](https://img.shields.io/badge/Website-www.auraconnect.com-blue?style=for-the-badge&logo=google-chrome)](https://www.auraconnect.com)
-[![Twitter](https://img.shields.io/badge/Twitter-@auraconnect-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/auraconnect)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-AuraConnect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/company/auraconnect)
-
----
 
 **Built with ❤️ by the AuraConnect Team**
 
