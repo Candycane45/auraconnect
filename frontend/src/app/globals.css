@@ -12,6 +12,7 @@
   --off-white: #f8f9fa;
   --text: #333;
   --shadow-dark: rgba(56, 102, 65, 0.15);
+  --shadow-dark: rgba(108, 74, 182, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
