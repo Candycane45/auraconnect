@@ -147,7 +147,6 @@ Before you begin, ensure you have the following installed:
 - ![Node.js](https://img.shields.io/badge/Node.js-v16.0+-339933?style=flat-square&logo=node.js) 
 - ![MongoDB](https://img.shields.io/badge/MongoDB-v4.4+-4EA94B?style=flat-square&logo=mongodb)
 - Firebase account
-- Google Maps API key
 
 ### Installation
 
@@ -159,29 +158,44 @@ Before you begin, ensure you have the following installed:
 
 2. **Install dependencies**
    ```bash
-   npm install
+   npm install --prefix frontend
+   npm install --prefix backend
    ```
 
 3. **Set up environment variables**
-   ```bash
-   cp .env.example .env.local
-   ```
-   
+    
    Fill in your environment variables:
+   frontend/.env
    ```env
-   MONGODB_URI=your_mongodb_connection_string
-   FIREBASE_API_KEY=your_firebase_api_key
-   FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-   GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-   JWT_SECRET=your_jwt_secret
+   NEXT_PUBLIC_FIREBASE_PUBLIC_API_KEY=firebase_public_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=firebase_auth_domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=firebase_project_id
+   NEXT_PUBLIC_API_URL=backend_api_url
    ```
 
-4. **Start the development server**
+   backend/.env
+   ```env
+   MONGO_URI=mongodb_connection_URI
+   FIREBASE_PROJECT_ID=firebase_project_id
+   FIREBASE_CLIENT_EMAIL=firebase_client_email
+   FIREBASE_PRIVATE_KEY=firebase_private_key
+   PORT=port
+   ```
+
+   Also enable the email/password login in firebase console
+
+5. **Start the development server**
+   Backend
    ```bash
-   npm run dev
+   npm run dev --prefix backend
    ```
 
-5. **Open your browser**
+   Frontend
+    ```bash
+   npm run dev --prefix frontend
+   ```
+
+7. **Open your browser**
    Navigate to `http://localhost:3000`
 
 ---
