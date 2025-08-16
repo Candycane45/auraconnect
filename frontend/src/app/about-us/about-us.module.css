@@ -1,0 +1,265 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, var(--matcha-green), var(--soft-pink));
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar nav a {
+  color: var(--white);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: var(--hot-pink);
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btnPrimary,
+.btnSecondary,
+.btnLocation {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  font-size: 1em;
+}
+
+.btnPrimary {
+  background: var(--matcha-green);
+  color: var(--dark-green);
+}
+
+.btnPrimary:hover {
+  background: var(--hot-pink);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.btnSecondary {
+  background: var(--hot-pink);
+  color: var(--white);
+}
+
+.btnSecondary:hover {
+  background: var(--dark-green);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.btnLocation {
+  background: var(--soft-pink);
+  color: var(--dark-green);
+  margin-bottom: 10px;
+}
+
+.btnLocation:hover {
+  background: var(--matcha-green);
+  color: var(--hot-pink);
+}
+
+/* Hero/Intro */
+.aboutHero {
+  padding: 62px 24px 36px 24px;
+  background: var(--soft-pink);
+  text-align: center;
+  box-shadow: 0 2px 16px var(--shadow-dark);
+  border-bottom: 6px solid var(--soft-pink);
+}
+.aboutHero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+  font-weight: 900;
+  color: var(--dark-green);
+  letter-spacing: 0.06em;
+}
+.aboutMission {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--dark-green);
+  font-weight: 500;
+}
+
+/* Why Section */
+.whySection,
+.techSection,
+.impactSection {
+  padding: 34px 22vw 24px 22vw;
+  background: var(--white);
+}
+.whySection,
+.techSection {
+  border-bottom: 4px solid var(--matcha-green);
+}
+
+.whySection h2,
+.techSection h2 {
+  color: var(--dark-green);
+  font-size: 1.45rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+.whySection p,
+.impactSection p,
+.impactSection {
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--hot-pink);
+  margin: 0;
+}
+
+/* Team Section */
+.teamSection {
+  padding: 35px 5vw 36px 5vw;
+  background: var(--matcha-green);
+  text-align: center;
+  border-bottom: 5px solid var(--soft-pink);
+}
+.teamSection h2 {
+  color: var(--hot-pink);
+  margin-bottom: 38px;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 36px 42px;
+  justify-items: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 600px;
+  justify-content: center;
+}
+.teamMember {
+  background: var(--white);
+  border-radius: 19px;
+  box-shadow: 0 4px 20px var(--shadow-dark);
+  padding: 32px 24px 22px;
+  min-width: 350px;
+  margin-bottom: 0;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamMember:hover {
+  transform: translateY(-9px) scale(1.03);
+  box-shadow: 0 16px 32px var(--shadow-dark);
+  background-color: var(--light-green);
+}
+.teamMember h3 {
+  margin-top: 16px;
+  color: var(--hot-pink);
+  font-size: 1.14rem;
+}
+.teamMember p {
+  margin: 14px 0 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* Avatar */
+.avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--matcha-green),
+    var(--soft-pink),
+    var(--hot-pink)
+  );
+  margin: 0 auto;
+  border: 3px solid var(--matcha-green);
+}
+.avatarAI {
+  background: linear-gradient(120deg, var(--matcha-green), var(--hot-pink));
+}
+.avatarFE {
+  background: linear-gradient(120deg, var(--soft-pink), var(--matcha-green));
+}
+.avatarWeb {
+  background: linear-gradient(120deg, var(--hot-pink), var(--matcha-green));
+}
+.avatarCloud {
+  background: linear-gradient(120deg, var(--soft-pink), var(--hot-pink));
+}
+
+/* Tech Section */
+.techSection ul {
+  margin: 12px 0 0 0;
+  padding: 0 0 0 24px;
+  color: var(--dark-green);
+  font-weight: 600;
+}
+.techSection li {
+  margin: 6px 0;
+  font-size: 1.06rem;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 28px 10px 30px 10px;
+  background: var(--matcha-green);
+  color: var(--hot-pink);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-top: 6px solid var(--soft-pink);
+}
+
+/* Responsive design */
+@media (max-width: 930px) {
+  .whySection,
+  .techSection,
+  .impactSection {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  .teamGrid {
+    gap: 24px 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutHero {
+    padding: 38px 8vw 18px 8vw;
+  }
+  .whySection,
+  .techSection,
+  .impactSection {
+    padding: 22px 2vw 20px 2vw;
+  }
+  .teamSection {
+    padding: 18px 2vw 18px 2vw;
+  }
+  .teamMember {
+    width: 98vw;
+    min-width: unset;
+  }
+  .footer {
+    padding: 18px 2vw 20px 2vw;
+  }
+}

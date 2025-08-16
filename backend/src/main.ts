@@ -8,6 +8,7 @@ import { AuthenticatedRequest, verifyToken } from "@/firebase/firebaseAuth";
 
 // Routes
 import eventsRouter from "./routes/events";
+import contactRouter from "./routes/contact";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -37,6 +38,7 @@ app.get("/api/protected", verifyToken, (req: AuthenticatedRequest, res) => {
 
 // Init route
 app.use("/api", eventsRouter);
+app.use("/", contactRouter);
 
 // Example of POST route
 app.post(

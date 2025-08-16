@@ -45,7 +45,7 @@ export default function Navbar() {
         <Link href="/">Home</Link>
         <Link href="/events">Trending Events</Link>
         <Link href="/create-event">Create Event</Link>
-        <Link href="/about">About</Link>
+        <Link href="/about-us">About</Link>
         <Link href="/contact-us">Contact Us</Link>
       </nav>
 
