@@ -66,113 +66,109 @@ const CreateEvent = () => {
 
   return (
     <>
-      <Head>
-        <title>Create Event | AuraConnect</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
       <Navbar />
-
-      <main className={styles.createEventContainer}>
-        <h1 className={styles.pageTitle}>Create Your Event</h1>
-        {/* ✅ Wire up the handler here */}
-        <form
-          className={styles.eventForm}
-          encType="multipart/form-data"
-          onSubmit={handleSubmit}
-        >
-          <label htmlFor="eventName">Event Name *</label>
-          <input
-            type="text"
-            id="eventName"
-            name="eventName"
-            placeholder="Enter event name"
-            required
-          />
-
-          <label htmlFor="eventDate">Date & Time *</label>
-          <input
-            type="datetime-local"
-            id="eventDate"
-            name="eventDate"
-            required
-          />
-
-          <label htmlFor="eventLocation">Location *</label>
-          <input
-            type="text"
-            id="eventLocation"
-            name="eventLocation"
-            placeholder="Event venue or address"
-            required
-          />
-
-          <label htmlFor="eventCategory">Category *</label>
-          <select
-            id="eventCategory"
-            name="eventCategory"
-            required
-            defaultValue=""
+      <div className={styles.pageWrapper}>
+        <main className={styles.createEventContainer}>
+          <h1 className={styles.pageTitle}>Create Your Event</h1>
+          {/* ✅ Wire up the handler here */}
+          <form
+            className={styles.eventForm}
+            encType="multipart/form-data"
+            onSubmit={handleSubmit}
           >
-            <option value="" disabled>
-              Select category
-            </option>
-            <option value="Music">Music</option>
-            <option value="Arts & Culture">Arts & Culture</option>
-            <option value="Sports">Sports</option>
-            <option value="Networking">Networking</option>
-            <option value="Workshops">Workshops</option>
-            <option value="Virtual">Virtual</option>
-            <option value="Other">Other</option>
-          </select>
+            <label htmlFor="eventName">Event Name *</label>
+            <input
+              type="text"
+              id="eventName"
+              name="eventName"
+              placeholder="Enter event name"
+              required
+            />
 
-          <label htmlFor="eventDescription">Description *</label>
-          <textarea
-            id="eventDescription"
-            name="eventDescription"
-            rows={5}
-            placeholder="Describe your event"
-            required
-          ></textarea>
+            <label htmlFor="eventDate">Date & Time *</label>
+            <input
+              type="datetime-local"
+              id="eventDate"
+              name="eventDate"
+              required
+            />
 
-          <label htmlFor="eventImage">Upload Event Image *</label>
-          <input
-            type="file"
-            id="eventImage"
-            name="eventImage"
-            accept="image/*"
-            required
-          />
+            <label htmlFor="eventLocation">Location *</label>
+            <input
+              type="text"
+              id="eventLocation"
+              name="eventLocation"
+              placeholder="Event venue or address"
+              required
+            />
 
-          <label htmlFor="eventPrice">Entry Fee (Optional)</label>
-          <input
-            type="number"
-            id="eventPrice"
-            name="eventPrice"
-            placeholder="Enter price (e.g. 250)"
-            min="0"
-            step="0.01"
-          />
+            <label htmlFor="eventCategory">Category *</label>
+            <select
+              id="eventCategory"
+              name="eventCategory"
+              required
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select category
+              </option>
+              <option value="Music">Music</option>
+              <option value="Arts & Culture">Arts & Culture</option>
+              <option value="Sports">Sports</option>
+              <option value="Networking">Networking</option>
+              <option value="Workshops">Workshops</option>
+              <option value="Virtual">Virtual</option>
+              <option value="Other">Other</option>
+            </select>
 
-          <button
-            type="submit"
-            className={styles.btnSubmit}
-            disabled={isPending}
-          >
-            {isPending ? "Creating..." : "Create Event"}
-          </button>
+            <label htmlFor="eventDescription">Description *</label>
+            <textarea
+              id="eventDescription"
+              name="eventDescription"
+              rows={5}
+              placeholder="Describe your event"
+              required
+            ></textarea>
 
-          {isSuccess && (
-            <p className={styles.success}>✅ Event created successfully!</p>
-          )}
-          {isError && (
-            <p className={styles.error}>
-              ❌ Something went wrong:{" "}
-              {error instanceof Error ? error.message : "Unknown error"}
-            </p>
-          )}
-        </form>
-      </main>
+            <label htmlFor="eventImage">Upload Event Image *</label>
+            <input
+              type="file"
+              id="eventImage"
+              name="eventImage"
+              accept="image/*"
+              required
+            />
+
+            <label htmlFor="eventPrice">Entry Fee (Optional)</label>
+            <input
+              type="number"
+              id="eventPrice"
+              name="eventPrice"
+              placeholder="Enter price (e.g. 250)"
+              min="0"
+              step="0.01"
+            />
+
+            <button
+              type="submit"
+              className={styles.btnSubmit}
+              disabled={isPending}
+            >
+              {isPending ? "Creating..." : "Create Event"}
+            </button>
+
+            {isSuccess && (
+              <p className={styles.success}>✅ Event created successfully!</p>
+            )}
+            {isError && (
+              <p className={styles.error}>
+                ❌ Something went wrong:{" "}
+                {error instanceof Error ? error.message : "Unknown error"}
+              </p>
+            )}
+          </form>
+        </main>
+      </div>
     </>
   );
 };

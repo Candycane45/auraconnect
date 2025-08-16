@@ -8,6 +8,17 @@
   animation: fadeIn 1s ease forwards;
 }
 
+/* ✅ Full-page wrapper for background and centering */
+.pageWrapper {
+  min-height: 100vh;
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
 .pageTitle {
   color: var(--dark-green);
   text-align: center;
@@ -77,7 +88,7 @@
 .btnSubmit:hover,
 .btnSubmit:focus {
   background: var(--soft-pink);
-  color: var(--matcha-green);
+  color: #f76b8a;
   transform: scale(1.05);
   box-shadow: 0 12px 28px var(--shadow-light);
 }

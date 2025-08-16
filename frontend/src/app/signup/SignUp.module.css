@@ -74,8 +74,8 @@
 }
 
 .btnPrimary:hover {
-  background-color: #f76b8a;
-  color: #fff;
+  background-color: var(--soft-pink);
+  color: #f76b8a;
   transform: scale(1.05);
 }
 

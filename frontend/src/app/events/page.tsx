@@ -82,7 +82,10 @@ export default function SearchResults() {
 
                   <p className={styles.eventDesc}>{event.eventDescription}</p>
 
-                  <a href="#" className={styles.detailsLink}>
+                  <a
+                    href={`/events/${event._id}`}
+                    className={styles.detailsLink}
+                  >
                     View Details
                   </a>
                 </div>

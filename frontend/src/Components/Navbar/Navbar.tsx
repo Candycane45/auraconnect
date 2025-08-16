@@ -43,7 +43,7 @@ export default function Navbar() {
 
       <nav className={styles.nav}>
         <Link href="/">Home</Link>
-        <Link href="/events">Trending Events</Link>
+        <Link href="/events"> Events</Link>
         <Link href="/create-event">Create Event</Link>
         <Link href="/about-us">About</Link>
         <Link href="/contact-us">Contact Us</Link>
@@ -70,9 +70,9 @@ export default function Navbar() {
                 <div className={styles.dropdownItem}>
                   <Link href="/profile">👤 Profile</Link>
                 </div>
-                <div className={styles.dropdownItem}>
+                {/* <div className={styles.dropdownItem}>
                   <Link href="/settings">⚙️ Settings</Link>
-                </div>
+                </div> */}
                 <hr />
                 <button className={styles.logoutBtn} onClick={signOut}>
                   🚪 Logout

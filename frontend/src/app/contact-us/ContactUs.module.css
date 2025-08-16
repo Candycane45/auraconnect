@@ -11,6 +11,17 @@
   animation: fadeUp 1s ease forwards;
 }
 
+/* ✅ Full-page wrapper for background and centering */
+.pageWrapper {
+  min-height: 100vh;
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
 /* Page Title */
 .pageTitle {
   color: var(--dark-green);

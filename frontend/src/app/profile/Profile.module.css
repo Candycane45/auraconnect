@@ -1,0 +1,247 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, var(--matcha-green), var(--soft-pink));
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar nav a {
+  color: var(--white);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+.active,
+.navbar nav a:hover {
+  color: var(--hot-pink);
+  border-bottom: 2px solid var(--hot-pink);
+}
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* Exit Button */
+.btnExit {
+  background: var(--hot-pink);
+  color: var(--white);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s, transform 0.2s;
+}
+.btnExit:hover {
+  background: var(--dark-green);
+  transform: scale(1.05);
+}
+
+/* Main Container */
+.profileMain {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Profile Header */
+.profileHeader {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--shadow-dark);
+  margin-bottom: 30px;
+}
+.profileAvatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--matcha-green);
+  object-fit: cover;
+}
+.profileInfo h1 {
+  margin: 0 0 8px 0;
+  color: var(--dark-green);
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.profileLocation {
+  color: var(--hot-pink);
+  font-size: 1.1rem;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+.profileBio {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  max-width: 400px;
+}
+.btnEdit {
+  background: var(--hot-pink);
+  color: var(--white);
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.btnEdit:hover {
+  background: var(--dark-green);
+  transform: scale(1.05);
+}
+
+/* Profile Stats */
+.profileStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.statCard {
+  background: var(--matcha-green);
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 18px var(--shadow-dark);
+  transition: transform 0.2s;
+}
+.statCard:hover {
+  transform: translateY(-5px);
+}
+.statCard h3 {
+  font-size: 2.5rem;
+  margin: 0 0 8px 0;
+  color: var(--dark-green);
+  font-weight: 900;
+}
+.statCard p {
+  margin: 0 0 8px 0;
+  color: var(--dark-green);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.stars {
+  font-size: 1.2rem;
+}
+
+/* Recent Activity */
+.recentActivity,
+.reviewsSection {
+  margin-bottom: 40px;
+}
+.recentActivity h2,
+.reviewsSection h2 {
+  color: var(--dark-green);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.activityList {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 18px var(--shadow-dark);
+}
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--light-green);
+}
+.activityItem:last-child {
+  border-bottom: none;
+}
+.activityIcon {
+  font-size: 1.5rem;
+  width: 40px;
+  text-align: center;
+}
+.activityContent p {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+}
+.activityDate {
+  color: var(--hot-pink);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Reviews Section */
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.reviewCard {
+  background: var(--light-pink);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--shadow-dark);
+}
+.reviewStars {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.reviewCard p {
+  margin: 0 0 15px 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+.reviewer {
+  color: var(--dark-green);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--matcha-green);
+  color: var(--dark-green);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profileHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .profileStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+  .profileMain {
+    padding: 20px 15px;
+  }
+  .profileStats {
+    grid-template-columns: 1fr;
+  }
+}

@@ -51,6 +51,34 @@ router.get("/events", async (req: Request, res: Response) => {
   }
 });
 
+// GET /api/events/:id - fetch a single event by ID
+router.get("/events/:id", async (req: Request, res: Response) => {
+  try {
+    await connectDB();
+
+    const { id } = req.params;
+
+    // Validate the ID
+    if (!id.match(/^[0-9a-fA-F]{24}$/)) {
+      return res.status(400).json({ error: "Invalid event ID" });
+    }
+
+    const event = await Event.findById(id);
+
+    if (!event) {
+      return res.status(404).json({ error: "Event not found" });
+    }
+
+    return res.status(200).json({
+      message: "Event fetched successfully",
+      event,
+    });
+  } catch (error) {
+    console.error("Error fetching event:", error);
+    return res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 // POST /api/events - create event with file upload
 router.post(
   "/events",

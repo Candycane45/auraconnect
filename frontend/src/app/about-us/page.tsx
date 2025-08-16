@@ -71,7 +71,7 @@ const AboutUs: NextPage = () => {
             </div>
             <div className={styles.teamMember}>
               <div className={`${styles.avatar} ${styles.avatarCloud}`}></div>
-              <h3>Cindy Jane Miriyala</h3>
+              <h3>Cindy</h3>
               <p>
                 Third-year Computer Science student and passionate web
                 developer. Eager to learn, collaborate, and help build digital

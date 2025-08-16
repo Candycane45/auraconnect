@@ -1,39 +1,71 @@
 .trending {
-  padding: 40px 0;
+  padding: 40px 20px;
   text-align: center;
-  background: var(--matcha-green);
 }
 
 .eventCards {
   display: flex;
-  justify-content: center;
-  gap: 22px;
-  margin-top: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .eventCard {
-  background: var(--white);
-  padding: 22px 15px;
+  background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(150, 215, 178, 0.17);
-  width: 210px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 15px;
+  transition: transform 0.3s;
 }
 
 .eventCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 18px rgba(247, 107, 138, 0.15);
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.eventImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .moreLink {
   display: inline-block;
-  margin-top: 18px;
-  color: var(--hot-pink);
-  text-decoration: underline;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #f76b8a;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s;
 }
 
 .moreLink:hover {
-  color: var(--dark-green);
+  background: #386641;
+}
+
+/* Optional: fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.delay-2 {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

@@ -1,0 +1,262 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, var(--matcha-green), var(--soft-pink));
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar nav a {
+  color: var(--white);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar nav a:hover {
+  color: var(--hot-pink);
+}
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btnPrimary,
+.btnSecondary {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  font-size: 1em;
+}
+.btnPrimary {
+  background: var(--matcha-green);
+  color: var(--dark-green);
+}
+.btnPrimary:hover {
+  background: var(--hot-pink);
+  color: var(--white);
+  transform: scale(1.05);
+}
+.btnSecondary {
+  background: var(--hot-pink);
+  color: var(--white);
+}
+.btnSecondary:hover {
+  background: var(--dark-green);
+  transform: scale(1.05);
+}
+
+/* Main Layout */
+.eventDetails {
+  display: flex;
+  gap: 36px;
+  max-width: 1100px;
+  margin: 60px auto 0 auto;
+  padding: 0 24px;
+  padding-bottom: 50px;
+}
+.eventCardLg {
+  flex: 2.5;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(56, 102, 65, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+.eventBanner {
+  width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  height: 250px;
+  object-fit: cover;
+}
+.eventInfo {
+  padding: 28px 32px 0 32px;
+}
+.eventTitle {
+  margin: 0 0 12px 0;
+  font-size: 2.2em;
+  color: var(--hot-pink);
+}
+.eventMeta {
+  font-size: 1em;
+  color: var(--dark-green);
+  margin-bottom: 12px;
+}
+.eventMeta span {
+  display: inline-block;
+  margin-right: 18px;
+}
+.eventTags {
+  margin-bottom: 12px;
+}
+.tag {
+  display: inline-block;
+  background: var(--matcha-green);
+  color: var(--dark-green);
+  padding: 4px 14px;
+  border-radius: 10px;
+  margin-right: 7px;
+  font-size: 0.92em;
+  margin-bottom: 3px;
+}
+.eventDescription {
+  margin: 16px 0 18px 0;
+  font-size: 1.1em;
+}
+.eventDetailsList > div {
+  margin-bottom: 8px;
+}
+.eventActionBtn {
+  display: inline-block;
+  margin-top: 22px;
+  background: var(--matcha-green);
+  color: var(--dark-green);
+  text-decoration: none;
+  padding: 11px 36px;
+  border-radius: 24px;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.eventActionBtn:hover {
+  background: var(--hot-pink);
+  color: var(--white);
+  transform: scale(1.04);
+}
+
+/* Sidebar */
+.eventSidebar {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.eventTimebox,
+.eventAttendees,
+.eventShare {
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(149, 213, 178, 0.13);
+  padding: 20px 18px;
+}
+.eventTimebox ul {
+  padding: 0 0 0 14px;
+  margin: 0;
+}
+.attendeeAvatars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+.attendeeAvatars img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--matcha-green);
+  object-fit: cover;
+}
+.attendeeAvatars span {
+  color: var(--dark-green);
+  margin-left: 6px;
+  font-size: 0.96em;
+}
+.eventShare button {
+  margin-right: 8px;
+  margin-bottom: 4px;
+  background: var(--soft-pink);
+  color: var(--dark-green);
+  border: none;
+  border-radius: 18px;
+  padding: 8px 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.eventShare button:hover {
+  background: var(--hot-pink);
+  color: var(--white);
+}
+
+/* Animation */
+.fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Footer */
+.footerContact {
+  text-align: center;
+  background: linear-gradient(90deg, var(--soft-pink), var(--matcha-green));
+  padding: 36px 12px 14px 12px;
+}
+.contactFormSmall {
+  display: inline-block;
+  text-align: left;
+  max-width: 340px;
+  width: 100%;
+}
+.contactFormSmall input,
+.contactFormSmall textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid rgba(56, 102, 65, 0.17);
+  background: var(--off-white);
+}
+.contactFormSmall button {
+  width: 100%;
+}
+.footerContact h2 {
+  margin-bottom: 1.2em;
+}
+
+.footer {
+  margin-top: 44px;
+}
+.footerCopyright {
+  background: var(--dark-green);
+  color: var(--white);
+  text-align: center;
+  margin: 0;
+  padding: 16px 0;
+  font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .eventDetails {
+    flex-direction: column;
+    max-width: 98vw;
+  }
+  .eventSidebar,
+  .eventCardLg {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .eventInfo {
+    padding: 16px 14px 0 14px;
+  }
+  .eventDetails {
+    gap: 10px;
+  }
+}
