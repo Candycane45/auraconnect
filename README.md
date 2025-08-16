@@ -269,7 +269,7 @@ Third-year Computer Science student and passionate web developer. Eager to learn
 
 ## 🌍 Our Impact
 
-AuraConnect is more than an app—it's a **catalyst for stronger communities**. By enabling easy local meetups, we aim to:
+AuraConnect is more than an app — it's a **catalyst for stronger communities**. By enabling easy local meetups, we aim to:
 
 - 🤝 **Reduce social isolation** and foster meaningful connections
 - 🏛️ **Strengthen community bonds** through shared experiences  
