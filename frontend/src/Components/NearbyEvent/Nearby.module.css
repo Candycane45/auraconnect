@@ -36,6 +36,7 @@
   box-shadow: 0 4px 12px rgba(150, 215, 178, 0.17);
   width: 210px;
   transition: transform 0.3s, box-shadow 0.3s;
+  background-color: var(--matcha-green);
 }
 
 .eventCard:hover {

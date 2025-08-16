@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Nearby.module.css";
 
 export default function NearbyEvents() {
@@ -5,12 +6,14 @@ export default function NearbyEvents() {
     {
       title: "Yoga by the Lake",
       datetime: "Today, 6 AM | City Lake",
+      url: "http://localhost:3000/events/68a0a184707165101471afc9",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.5BMZgi77Y-Vdrg8GzcmOTQHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=10d37a3125f382bb43ad2a3be223c2bedf257a91a97691a0fcec36c553b4f796&ipo=images",
     },
     {
       title: "Food Fest",
       datetime: "Sat, 5 PM | Downtown Street",
+      url: "http://localhost:3000/events/68a0a1cd707165101471afcb",
       image:
         "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80",
     },
@@ -22,17 +25,19 @@ export default function NearbyEvents() {
       {/* <button className={styles.btnLocation}>Use My Location</button> */}
       <div className={styles.eventCards}>
         {events.map((event, index) => (
-          <div key={index} className={styles.eventCard}>
-            <div className={styles.imageWrapper}>
-              <img
-                src={event.image}
-                alt={event.title}
-                className={styles.eventImage}
-              />
+          <Link key={index} href={event.url}>
+            <div className={styles.eventCard}>
+              <div className={styles.imageWrapper}>
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className={styles.eventImage}
+                />
+              </div>
+              <h3>{event.title}</h3>
+              <p>{event.datetime}</p>
             </div>
-            <h3>{event.title}</h3>
-            <p>{event.datetime}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
