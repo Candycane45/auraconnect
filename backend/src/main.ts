@@ -5,6 +5,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import morgan from "morgan";
 import { AuthenticatedRequest, verifyToken } from "@/firebase/firebaseAuth";
+import path from "path";
 
 // Routes
 import eventsRouter from "./routes/events";
@@ -18,6 +19,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
+
+// Serve uploads folder statically
+app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
 // Public route
 app.get("/api/public", (req, res) => {
