@@ -5,29 +5,24 @@ A neighborhood-first event networking platform that transforms digital connectio
 [](https://opensource.org/licenses/MITntation](#) - 🐛 Report Bug - ✨ Request Feature
 
 </div>
-🎯 The Problem
+
+
+**🎯 The Problem**
 In today's fast-paced world, neighbors often live side-by-side for years without connecting. Digital distractions and busy routines replace face-to-face moments. Most social platforms focus on global networks, leaving a gap for local, meaningful interactions. This leads to:
 
-🏠 Social isolation in our own neighborhoods
+- 🏠 Social isolation in our own neighborhoods
+- 🤝 Weaker community bonds and missed connections
+- 🚫 Lost opportunities for collaboration and friendship
+- 💔 Disconnect between digital presence and real-world community
 
-🤝 Weaker community bonds and missed connections
+**💡 Our Solution**
+AuraConnect is a neighborhood-first event networking app that makes it easy to create, discover, and join local activities — from potluck dinners to yoga in the park. We help people turn shared interests into shared experiences, strengthen community ties, and build a sense of belonging. Think of it as a friendly, smart digital notice board for your neighborhood.
 
-🚫 Lost opportunities for collaboration and friendship
-
-💔 Disconnect between digital presence and real-world community
-
-💡 Our Solution
-AuraConnect is a neighborhood-first event networking app that makes it easy to create, discover, and join local activities — from potluck dinners to yoga in the park. We help people turn shared interests into shared experiences, strengthen community ties, and build a sense of belonging.
-
-Think of it as a friendly, smart digital notice board for your neighborhood.
-
-✨ Key Features
-🗺 Location-Based Discovery
-GPS-powered suggestions for nearby events
-
-Smart radius-based event recommendations
-
-Interactive map integration with Google Maps API
+**✨ Key Features**
+- Location-Based Discovery
+- GPS-powered suggestions for nearby events
+- Smart radius-based event recommendations
+- Interactive map integration with Google Maps API
 
 🤖 Intelligent Matching
 AI-powered tags for relevant activity recommendations
